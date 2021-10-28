@@ -6,13 +6,12 @@ public class Task02 {
     public static void main(String[] args) {
         //Ввод данных
         Scanner scanner = new Scanner(System.in);
-        int piecesInCutPiece = scanner.nextInt();
+        int n = scanner.nextInt();
 
         int numberOfCuts  = 0;
-        while(piecesInCutPiece != 1) {
-            numberOfCuts += 1;
-            piecesInCutPiece = piecesInCutPiece / 2 + piecesInCutPiece % 2;
-        }
+        for(int piecesInCutPiece  = n; piecesInCutPiece != 1; piecesInCutPiece = piecesInCutPiece / 2 + piecesInCutPiece % 2)
+            numberOfCuts++;
+
         //Вывод данных
         System.out.println(numberOfCuts);
     }
