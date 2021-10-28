@@ -12,7 +12,7 @@ public class Task01 {
         int volumeTraffic = scanner.nextInt();
 
         int cost = costTrafficInTariff;
-        if(volumeTraffic>volumeTrafficInTariff) cost+= (volumeTraffic-volumeTrafficInTariff)*costTrafficOverTariff;
+        if(volumeTraffic>volumeTrafficInTariff) cost += (volumeTraffic-volumeTrafficInTariff)*costTrafficOverTariff;
 
         //Вывод данных
         System.out.println(cost);
